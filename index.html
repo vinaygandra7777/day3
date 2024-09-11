@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            text-align: center;
+            border:1px solid black;
+            padding-bottom: 10%;
+            width:50%;
+            margin-top: 10%;
+            margin-left: 20%;
+            margin-bottom: 10%;
+            background-color: rgb(79, 86, 86);
+            color:aliceblue;
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="form2.html" method="get">
+        <h1><strong>SignUp here!</strong></h1>
+        <br>
+        <input type="text" name="username" placeholder="username" pattern="[a-zA-Z]+" required><br>
+        <br>
+        <input type="text" name="email" placeholder="email" title="Enter proper Email" required>
+        <br>
+        <br>
+        <input type="number" name="number" placeholder=" Phone Number" required>
+        <br>
+        <br>
+        <input type="password" name="number" placeholder="Password" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])(?=.*[0-9])([A-Za-z!@#$%^&*0-9]{8,})" required>
+        <br>
+        <br>
+        <input type="text" name="number" placeholder=" Confirm Password" pattern="(?=.*[A-Z)(?=.*[a-z])(?=.*[!@#$%^&*])(?=.*[0-9])([A-Za-z!@#$%^&*0-9]{8,})" required>
+        <br>
+        <br>
+        <div>
+        <input  style=" background-color: rgb(44, 44, 198); color: aliceblue;"type="submit" value ="sign up">
+        </div>
+        <br>
+        <p>Already have a account! <a href="form2.html">login</a><p>
+    </form>
+</body>
+</html>
